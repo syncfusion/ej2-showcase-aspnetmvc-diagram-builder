@@ -11,28 +11,28 @@ var PaperSize = (function () {
 var UtilityMethods = (function () {
     function UtilityMethods() {
         this.flowChartImage = [
-            { source: '/Content/assets/dbstyle/common_images/blank_diagram.svg', name: 'Blank Diagram', type: 'svg_blank' },
-            { source: '/Content/assets/dbstyle/flowchart_Images/Credit_Card_Processing.svg', name: 'Credit Card Processing', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/flowchart_Images/Bank_Teller_Flow.svg', name: 'Banking Teller Process Flow', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/flowchart_Images/Developer_Workflow.SVG', name: 'Agile"s Developer Workflow', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/common_images/blank_diagram.svg', name: 'Blank Diagram', type: 'svg_blank' },
+            { source: './Content/assets/dbstyle/flowchart_Images/Credit_Card_Processing.svg', name: 'Credit Card Processing', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/flowchart_Images/Bank_Teller_Flow.svg', name: 'Banking Teller Process Flow', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/flowchart_Images/Developer_Workflow.SVG', name: 'Agile"s Developer Workflow', type: 'svg_image' },
         ];
         this.mindMapImage = [
-            { source: '/Content/assets/dbstyle/common_images/blank_diagram_mind.svg', name: 'Blank Diagram', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/mindmap_images/BusinessPlanning.SVG', name: 'Business Planning', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/mindmap_images/TQM.SVG', name: 'Quality Management', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/mindmap_images/SoftwareLifeCycle.SVG', name: 'Software Life Cycle', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/common_images/blank_diagram_mind.svg', name: 'Blank Diagram', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/mindmap_images/BusinessPlanning.SVG', name: 'Business Planning', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/mindmap_images/TQM.SVG', name: 'Quality Management', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/mindmap_images/SoftwareLifeCycle.SVG', name: 'Software Life Cycle', type: 'svg_image' },
         ];
         this.orgChartImage = [
-            { source: '/Content/assets/dbstyle/common_images/blank_diagram_org.svg', name: 'Blank Diagram', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/orgchart_images/OrgRenderingStyle_1.svg', name: 'Org Template Style - 1', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/orgchart_images/OrgRenderingStyle_2.svg', name: 'Org Template Style - 2', type: 'svg_image' },
-            { source: '/Content/assets/dbstyle/orgchart_images/OrgRenderingStyle_3.svg', name: 'Org Template Style - 3', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/common_images/blank_diagram_org.svg', name: 'Blank Diagram', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/orgchart_images/OrgRenderingStyle_1.svg', name: 'Org Template Style - 1', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/orgchart_images/OrgRenderingStyle_2.svg', name: 'Org Template Style - 2', type: 'svg_image' },
+            { source: './Content/assets/dbstyle/orgchart_images/OrgRenderingStyle_3.svg', name: 'Org Template Style - 3', type: 'svg_image' },
         ];
         this.bpmnImage = [
-            { source: '/Content/assets/dbstyle/common_images/blank_diagram.svg', name: 'Blank Diagram', type: 'svg_blank' },
-            { source: '/Content/assets/dbstyle/bpmn_images/Template1.png', name: 'BPMN Diagram 1' },
-            { source: '/Content/assets/dbstyle/bpmn_images/Template1.png', name: 'BPMN Diagram 2' },
-            { source: '/Content/assets/dbstyle/bpmn_images/Template1.png', name: 'BPMN Diagram 3' },
+            { source: './Content/assets/dbstyle/common_images/blank_diagram.svg', name: 'Blank Diagram', type: 'svg_blank' },
+            { source: './Content/assets/dbstyle/bpmn_images/Template1.png', name: 'BPMN Diagram 1' },
+            { source: './Content/assets/dbstyle/bpmn_images/Template1.png', name: 'BPMN Diagram 2' },
+            { source: './Content/assets/dbstyle/bpmn_images/Template1.png', name: 'BPMN Diagram 3' },
         ]
         this.fillColorCode = ['#C4F2E8', '#F7E0B3', '#E5FEE4', '#E9D4F1', '#D4EFED', '#DEE2FF'];
         this.borderColorCode = ['#8BC1B7', '#E2C180', '#ACCBAA', '#D1AFDF', '#90C8C2', '#BBBFD6'];
@@ -341,17 +341,17 @@ var UtilityMethods = (function () {
             }
             else if (target.id === 'mindmap_child1') {
                 mindMapObject.createMindMap(false);
-                this.readTextFile('/Content/assets/dbstyle/mindmap_images/BusinessPlanning.json', selectedItem);
+                this.readTextFile('./Content/assets/dbstyle/mindmap_images/BusinessPlanning.json', selectedItem);
                 MindMapUtilityMethods.templateType = 'template1';
             }
             else if (target.id === 'mindmap_child2') {
                 mindMapObject.createMindMap(false);
-                this.readTextFile('/Content/assets/dbstyle/mindmap_images/TQM.json', selectedItem);
+                this.readTextFile('./Content/assets/dbstyle/mindmap_images/TQM.json', selectedItem);
                 MindMapUtilityMethods.templateType = 'template2';
             }
             else if (target.id === 'mindmap_child3') {
                 mindMapObject.createMindMap(false);
-                this.readTextFile('/Content/assets/dbstyle/mindmap_images/SoftwareDevelopmentLifeCycle.json', selectedItem);
+                this.readTextFile('./Content/assets/dbstyle/mindmap_images/SoftwareDevelopmentLifeCycle.json', selectedItem);
                 MindMapUtilityMethods.templateType = 'template1';
             }
             this.hideMenuItems();
@@ -369,15 +369,15 @@ var UtilityMethods = (function () {
                 OrgChartUtilityMethods.subTreeAlignments = 'Center';
                 if (target.id === 'orgchart_child1') {
                     orgChartObject.createOrgChart(false);
-                    this.readTextFile('/Content/assets/dbstyle/orgchart_images/OrgTemplateStyle1.json', selectedItem);
+                    this.readTextFile('./Content/assets/dbstyle/orgchart_images/OrgTemplateStyle1.json', selectedItem);
                 }
                 else if (target.id === 'orgchart_child2') {
                     orgChartObject.createOrgChart(false);
-                    this.readTextFile('/Content/assets/dbstyle/orgchart_images/OrgTemplateStyle2.json', selectedItem);
+                    this.readTextFile('./Content/assets/dbstyle/orgchart_images/OrgTemplateStyle2.json', selectedItem);
                 }
                 else if (target.id === 'orgchart_child3') {
                     orgChartObject.createOrgChart(false);
-                    this.readTextFile('/Content/assets/dbstyle/orgchart_images/OrgTemplateStyle3.json', selectedItem);
+                    this.readTextFile('./Content/assets/dbstyle/orgchart_images/OrgTemplateStyle3.json', selectedItem);
                 }
             }
             this.hideMenuItems();
@@ -388,13 +388,13 @@ var UtilityMethods = (function () {
                 selectedItem.selectedDiagram.clear();
             }
             else if (target.id === 'flowchart_child1') {
-                this.readTextFile('/Content/assets/dbstyle/flowchart_Images/CreditCardFlow.json', selectedItem);
+                this.readTextFile('./Content/assets/dbstyle/flowchart_Images/CreditCardFlow.json', selectedItem);
             }
             else if (target.id === 'flowchart_child2') {
-                this.readTextFile('/Content/assets/dbstyle/flowchart_Images/BankingTellerProcess.json', selectedItem);
+                this.readTextFile('./Content/assets/dbstyle/flowchart_Images/BankingTellerProcess.json', selectedItem);
             }
             else if (target.id === 'flowchart_child3') {
-                this.readTextFile('/Content/assets/dbstyle/flowchart_Images/Developer_Workflow.json', selectedItem);
+                this.readTextFile('./Content/assets/dbstyle/flowchart_Images/Developer_Workflow.json', selectedItem);
             }
             selectedItem.diagramType = 'GeneralDiagram';
             diagramContainer.classList.add('general-diagram');
@@ -745,7 +745,7 @@ var UtilityMethods = (function () {
                     node.maxHeight = 100;
                     selectedItem.selectedDiagram.dataBind();
                     node.shape = {
-                        type: 'Image', source: nodeInfo[propName] && nodeInfo[propName].value ? nodeInfo[propName].value.toString() : '/Content/assets/dbstyle/orgchart_images/blank-male.jpg',
+                        type: 'Image', source: nodeInfo[propName] && nodeInfo[propName].value ? nodeInfo[propName].value.toString() : './Content/assets/dbstyle/orgchart_images/blank-male.jpg',
                         align: 'XMinYMin', scale: 'Meet'
                     };
                     selectedItem.selectedDiagram.dataBind();
