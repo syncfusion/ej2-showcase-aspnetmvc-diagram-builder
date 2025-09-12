@@ -702,7 +702,7 @@ var moreShapesDialogContent = new ej.popups.Dialog({
     buttons: getDialogButtons('moreshapes'),
     content: '<div class="row"><div class="col-xs-3 temp-left-pane"><div id="moreShapesList" tabindex="1"></div></div>' +
         '<div class="col-xs-9 diagramTemplates temp-right-pane" style="padding-left:0px;padding-right:0px">' +
-        '<img id="shapePreviewImage" src="/Content/assets/dbstyle/shapes_images/flow.png" /></div></div></div>'
+        '<img id="shapePreviewImage" src="./Content/assets/dbstyle/shapes_images/flow.png" /></div></div></div>'
 });
 moreShapesDialogContent.appendTo('#moreShapesDialogContent');
 
