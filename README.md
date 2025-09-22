@@ -1,6 +1,6 @@
 [![.NET](https://github.com/syncfusion/ej2-showcase-aspnetmvc-diagram-builder/actions/workflows/dotnet.yml/badge.svg)](https://github.com/syncfusion/ej2-showcase-aspnetmvc-diagram-builder/actions/workflows/dotnet.yml)
 
-# Syncfusion® ASP.NET MVC - Diagram Builder Showcase App
+# Essential JS 2® for ASP.NET MVC - Diagram Builder
 The aspnet MVC diagram builder application is used to create the diagrams such as "Flow Charts", "MindMap Diagrams" and "Organization Chart" through Visual Interface.
 
 ## Requirements to run the demo
