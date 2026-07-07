@@ -263,7 +263,7 @@ namespace DiagramBuilder.Controllers
         public class contextMenuItems
         {
             [DefaultValue(null)]
-            [HtmlAttributeName("text")]
+
             [JsonProperty("text")]
             public string Text
             {
@@ -272,7 +272,7 @@ namespace DiagramBuilder.Controllers
             }
             [DefaultValue(null)]
 
-            [HtmlAttributeName("id")]
+            
             [JsonProperty("id")]
             public string Id
             {
@@ -283,7 +283,7 @@ namespace DiagramBuilder.Controllers
         public class BpmnShapes
         {
             [DefaultValue(null)]
-            [HtmlAttributeName("type")]
+            
             [JsonProperty("type")]
             public string Type
             {
@@ -292,7 +292,7 @@ namespace DiagramBuilder.Controllers
             }
 
             [DefaultValue(null)]
-            [HtmlAttributeName("shape")]
+            
             [JsonProperty("shape")]
             public string Shape
             {
@@ -300,7 +300,7 @@ namespace DiagramBuilder.Controllers
                 set;
             }
             [DefaultValue(null)]
-            [HtmlAttributeName("event")]
+           
             [JsonProperty("event")]
             public DiagramBpmnEvent Event
             {
@@ -308,7 +308,7 @@ namespace DiagramBuilder.Controllers
                 set;
             }
             [DefaultValue(null)]
-            [HtmlAttributeName("activity")]
+            
             [JsonProperty("activity")]
             public DiagramBpmnActivity Activity
             {
